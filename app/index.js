@@ -12,7 +12,7 @@ class App extends React.Component{
         //JSX here!
         return (
         <div>
-          hello worldddddd
+          hello world
         </div>
         )
     }
