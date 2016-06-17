@@ -3,20 +3,12 @@ import './utils/flexible.js'
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Router, Route, browserHistory} from 'react-router';
 
-class App extends React.Component{
-    constructor() {
-        super();
-    }
-    render() {
-        //JSX here!
-        return (
-        <div>
-          hello world
-        </div>
-        )
-    }
-};
+import Demo from './components/demo.js'
 
-
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render((
+  <Router history={browserHistory}>
+    <Route path="/" component={Demo} />
+  </Router>
+), document.getElementById('app'));
