@@ -31,7 +31,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 input, select, textarea {
     font-size: 100%
 }
-
+input {-webkit-appearance:none; /*去除input默认样式*/}
 table {
     border-collapse: collapse;
     border-spacing: 0
