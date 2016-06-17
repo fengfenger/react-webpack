@@ -28,7 +28,9 @@ module.exports = {
         hot: true,
         inline: true,
         progress: true,
-             headers: {'Access-Control-Allow-Origin': '*'},
+        headers: {
+            'Access-Control-Allow-Origin': '*'
+        },
         //只要配置dev server map这个参数就可以了
         proxy: {
             '/api/*': {
@@ -46,11 +48,14 @@ module.exports = {
             loader: 'babel',
             query: {
                 //添加两个presents 使用这两种presets处理js或者jsx文件
-                presets: ['es2015', 'react','react']
+                presets: ['es2015', 'react']
             }
         }, {
             test: /\.scss$/,
             loaders: ['style', 'css', 'sass']
+        }, {
+            test: /\.(png|jpg)$/,
+            loader: 'url-loader?limit=8192',
         }]
     },
     plugins: [

@@ -1,4 +1,7 @@
+@import './px2rem.scss';
 @import './reset';
+@import './components/demo.scss';
+
 body {
     font-size: 32px;
     font-size: 0.32rem;
