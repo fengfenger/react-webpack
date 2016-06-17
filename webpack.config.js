@@ -70,7 +70,10 @@ module.exports = {
             chunks: ['app', 'vendors'],
             inject: 'body'
         }),
-        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js')
+        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
+        new webpack.optimize.OccurenceOrderPlugin(),
+        new webpack.NoErrorsPlugin(),
+        new webpack.BannerPlugin('react'),
     ]
 
 }

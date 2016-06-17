@@ -20,10 +20,10 @@ export default class Demo extends React.Component{
               <img src={Avtar}/>
           	</div>
             <form>
-                <input type="text" className="text"/>
-                  <div className="key">
-                    <input type="password"/>
-                  </div>
+              <input type="text" className="text"/>
+              <div className="key">
+                <input type="password"/>
+              </div>
             </form>
             <div className="signin">
           		<input type="submit"/>
